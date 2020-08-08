@@ -5,6 +5,7 @@ Create separate user and do not use root user. Create Group for each specificati
 Setup Password Policy for IAM users.
 
 POLICY:
+=======
 Policy is a document that states one or more permission.
 
 2 kinds of permissions policies : Explicit Allow(Admin access)
@@ -15,4 +16,14 @@ Read-only access: Limited to the list action only.
 We can have custom policy. 
 More than one policy can be attached to user at a time
 Policies cannot be attached directly to Resources.
+
+USER:
+=====
+user ARN: arn:aws:iam:<accnt number>:user/<Name of user>
+Do not share keys and credentials with anyone.
+User creds should not be stored on EC2 instance.  
+Attach policy directly to the user.
+
+
+
 
