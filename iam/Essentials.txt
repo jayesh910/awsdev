@@ -25,5 +25,11 @@ User creds should not be stored on EC2 instance.
 Attach policy directly to the user.
 
 
+GROUPS:
+=======
+We can create group of developers and add users to it.
+We can attach policies to groups such that all users will get that policy attached.
+You can copy policy from one user to other.
+
 
 
