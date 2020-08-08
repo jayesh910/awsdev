@@ -1,0 +1,18 @@
+Components of IAM: Users, roles, policies, Groups and API keys
+
+Create MFA . 
+Create separate user and do not use root user. Create Group for each specifications.
+Setup Password Policy for IAM users.
+
+POLICY:
+Policy is a document that states one or more permission.
+
+2 kinds of permissions policies : Explicit Allow(Admin access)
+				  Explicit Deny(Denyy all policy.)
+Explicit deny will always overrides Allow.(i.e User will have no access to any resource)
+
+Read-only access: Limited to the list action only. 
+We can have custom policy. 
+More than one policy can be attached to user at a time
+Policies cannot be attached directly to Resources.
+
