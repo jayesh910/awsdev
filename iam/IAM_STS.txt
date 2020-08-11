@@ -1,0 +1,17 @@
+IAM Security Token Service(STS):
+It is fr short term use. Access for 2-more minutes. Then resources cannot be accessed.
+Can be used by non-aws account also. 
+e.g. temporary access to S3 bucket.
+For STS API call, creds return with 3 components:
+	-security token
+	-An access key id
+	-A secret access key
+Grant access to AWS resources w/o having to create an IAM identity for them.
+No need to revoke or rotate them.
+e.g. Access For facebook, google users , in case of federate with SAML.
+STS API CALLS: 
+1. AssumeRole: Cross-accnt delegation federation through custom identity broker
+2. AssumeRoleWithWebIdentity: Federation through a web-based identity provider.
+3. AssumeRoleWithSAML: Federation through SAML2.0
+4. GetFederationToken: Fed. through Custom Identity broker
+5. GetSessionToken: Temporary creds for Users in untrusted emvironments
