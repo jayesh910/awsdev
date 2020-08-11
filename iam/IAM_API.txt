@@ -1,0 +1,9 @@
+API keys for calling services from resources directly from website.
+User will have IAM API keys if the user is accessing through AWS CLI and AWS SDKs
+API keys will be paired with Policy to check if permission is granted.
+API keys are only available one time
+you will get access key id and secret key id. 
+Secret key id will be seen only once when created.
+Roles do not have API Creds.
+Deactivate the old one first to create the new one.
+Never create API or creds on EC2 instance.
