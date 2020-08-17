@@ -1,0 +1,27 @@
+KMS : Key Management service:
+Create and control the encryption keys used to encrypt.
+
+CONCEPTS: 
+
+* Customer Master Keys (CMKs):
+	- CMKs are used to encrypt/decrypt up to 4kb of data and are the primary resource in KMS.
+	- CMKs generate, e/d data keys that you use outside of AWS KMS to encrypt data.
+	- 2 types of CMKs:
+		i. Customer-Managed: CMKs you create and manage policies to access it.
+		ii. AWS-managed: Created and managed by AWS (e.g. aws/service-name . aws/s3).
+
+* Data Keys:
+	- Encryption keys for encrypting large amnts of data or other data encryption keys.
+	- AWS CMKs genreate, encrypt and decrypt data keys.
+	- KMS does not manage or store data keys,
+* Envelope Encryption:
+	- Plaintext data is encrypted with Data key.
+	- Data keys are encrypted with a key encryption key (KEK)
+	- KEK may be encrypted by another KEK, but there is Master key (KMS CMK) that decrypts one or more keys.
+======================================================================================================================================================
+AWS Inspector: 
+===============
+- inspector is not part of IAM but its part of security.
+- automated security assessment service that helps improve the security and compliance of applications
+- automatically assesses applications for exposure, vulnerabilities, and deviations from best practices
+- Inspector produces a detailed list of security findings prioritized by level of severity
