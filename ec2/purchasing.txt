@@ -1,0 +1,24 @@
+Purchasing options: 
+
+On-demand:
+ - lets you choose any instance type and provision at any time.
+ - most expensive purchasing option
+ - most flexible purchasing option
+ - only charge when instance is running
+
+Reserved Instances(RI): 
+ - Allows you to purchase instances for one or three years
+ - Significant price discount
+ - you have to pay full even if you haven't used it for some time.
+
+Spot instances: 
+ - Spot pricing is way to bid on an instance type, & only pay for that instance when spot price is equal to or below your bid price,
+ - AMAZON sells unused instances in this.
+ - You are charged per second.
+ - When you have an active bid, instance is provisioned for you less than or equal to bid price.
+ - For non-production applications.
+
+Dedicated Hosts:
+ - A dedicated physical machine that you have full control.
+ - Save money on license fee.
+
