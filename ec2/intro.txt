@@ -1,0 +1,12 @@
+EC2 is present under compute section.
+It provides scalable instance.
+Can run different OS
+Ec2 are designed to mimic traditional on-premises servers, but wuth ability to be commisioned and decommisioned on-demand for easy scalability & elasticity.
+
+Components: AMI  - THE OS and other settings
+	Instance types: Hardware related settings.
+	Network interface: public, private or elastic IP address.
+	Storage: EBS, EFS , Instance store(Ephimeral storage)
+
+Security grps must assign to Ec2 while creation.
+
