@@ -9,4 +9,6 @@ Components: AMI  - THE OS and other settings
 	Storage: EBS, EFS , Instance store(Ephimeral storage)
 
 Security grps must assign to Ec2 while creation.
+User data / Bootstrap / Startup script.
+Encrypted key-pairs used to manage login auth.
 
