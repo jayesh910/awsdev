@@ -1,0 +1,56 @@
+EBS Basics: 
+===========
+EBS are persistent.
+i.e. they can live even after instance is terminated.
+Attach to one instance at a time.
+Can be backedup to snapshot
+which can be later restored to new EBS
+EBS replicated within AZ's
+Mount Path : /dev/xvda or /dev/sda1
+
+EBS Performance:
+================
+Performance measured in IOPS
+AWS measures in 256KB chunks
+OPS that are > 256 KB are separated into individual chunks
+FOR e.g. a 512KB will be counted as 2 IOPS
+
+EBS Volume types:
+1. General Purpose SSD
+2. Provisioned IOPS SSD
+3. Throughput Optimized HDD and Cold HDD
+4. EBS Magnetic 
+
+1. General Purpose SSD: Use for Dev/Test env.& smaller DB instances.
+  Performance - 3IOPS/GB of storage size
+  Volume Size : 1 GB to 16TB
+  Burstable with baseline performance
+ 
+2. Provisioned IOPS SSD:
+  Large for mission critical applications
+  Works for sustained IOPS performance
+  Large DB workloads
+  Volume Size: 4GB to 16TB
+  Can reach 33000 IOPS per volume
+  
+3. Throughput optimized HDD and Cold HDD:
+  Cheaper than SSD - less performance
+  Cold HDD : Designed for less frequent access.
+  Volume Size: 500 GB to 16TB
+  Cannot be a boot volume
+  
+4. EBS Magnetic:
+    Low Storage Cost
+    Used where performance not required
+    Volume Size: 1 GB to 1 TB
+    
+==========================================================
+INSTANCE STORE VOLUME:
+
+Underlying h/w is physically attached to HOST computer that is running the instance.
+Considered as Ephemeral data(data will only present till the instance is alive)
+Instance ->stop or shutdown , data is erased.
+Instance ->rebooted , data persists.
+Supports only in few instance types.
+
+  
