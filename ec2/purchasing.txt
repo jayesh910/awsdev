@@ -5,11 +5,21 @@ On-demand:
  - most expensive purchasing option
  - most flexible purchasing option
  - only charge when instance is running
+ - Applications with short-term, spiky or unpredictable workloads that cannot be interrupted
+ - Test the water : first time testing application on  EC2.  
+ 
+ 
+  
 
 Reserved Instances(RI): 
  - Allows you to purchase instances for one or three years
+ - Application with steady state or predicatble usage
  - Significant price discount
  - you have to pay full even if you haven't used it for some time.
+ - Pay up-front to reduce the further costs.
+    STANDARD RIs - upto 72% discount on demand price. If the demand changes, we need to create new instances means new RIs.
+    Convertibles RIs - Upto 54% discount . We can goto different instance type like from t2.medium to t3.large using this RIs.
+    Scheduled RIs - Launch within time window you define. Match your capacity reservation to a predicatble recurring schedule that requires fraction.
 
 Spot instances: 
  - Spot pricing is way to bid on an instance type, & only pay for that instance when spot price is equal to or below your bid price,
@@ -21,4 +31,16 @@ Spot instances:
 Dedicated Hosts:
  - A dedicated physical machine that you have full control.
  - Save money on license fee.
+ - Apps best for purpose which not support multi-tenant virtualization.
+ - Great for licensing .
+ - Can be purchased on-demand
+ - Can be purchased as reservation
+ 
+
+SAVING PLANS:
+Save upto 72% 
+Commit to 1-3 years
+Also can use EC2, lambda and fargate.
+
+Cost Estimate: Use aws calculator to estimate the cost of AWS resources. https://calculator.aws/#/
 
