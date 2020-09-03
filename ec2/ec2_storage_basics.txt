@@ -7,6 +7,8 @@ Can be backedup to snapshot
 which can be later restored to new EBS
 EBS replicated within AZ's
 Mount Path : /dev/xvda or /dev/sda1
+Highly available: 
+
 
 EBS Performance:
 ================
@@ -25,19 +27,28 @@ EBS Volume types:
   Performance - 3IOPS/GB of storage size
   Volume Size : 1 GB to 16TB
   Burstable with baseline performance
- 
+  Maximum: 16000 IOPS
+  
 2. Provisioned IOPS SSD:
   Large for mission critical applications
   Works for sustained IOPS performance
   Large DB workloads
   Volume Size: 4GB to 16TB
-  Can reach 33000 IOPS per volume
+  Can reach 64000 IOPS per volume
+  io2 is same price as io1
+  io2 has 99.99% durability instead of 99.9% as of io1
   
 3. Throughput optimized HDD and Cold HDD:
   Cheaper than SSD - less performance
   Cold HDD : Designed for less frequent access.
   Volume Size: 500 GB to 16TB
   Cannot be a boot volume
+  Troughput of 40MB/s/TBS
+  Can be use in Bigdata, Data Warehouse, ETL, Log processing.
+ 
+4. Cold HDD:
+  Througput 12MB/s/TB
+  Good choice for colder data requires fewer scans per day. 
   
 4. EBS Magnetic:
     Low Storage Cost
@@ -53,4 +64,10 @@ Instance ->stop or shutdown , data is erased.
 Instance ->rebooted , data persists.
 Supports only in few instance types.
 
-  
+
+
+IOPS VS THROUGHPUT
+
+IOPS: Measures the number of read & write operations per second.
+      The ability to action reads and write very quickly.
+Throuput: Measures the number of bits read or written per second.
