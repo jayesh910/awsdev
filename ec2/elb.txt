@@ -1,0 +1,21 @@
+3 tyoes of LB:
+1. Application LB
+2. Network LB
+3. Classic LB
+
+Application LB : Works upto application layer
+Routing is based on the application
+Are best suited for load balancing of HTTPS and HTTP traffic.
+Operate at layer7 and are application aware
+Intelligent, & you can create advanced request routing, sending specific requests to web servers
+
+Network LB : It works on network layer .
+Best for load balancing of TCP traffic where extreme performance is required.
+Capable of handling millions of requests / seconds, maintaining ultra low latencies.
+But Expensive 
+
+Classic LB : It works only for legacy purpose.
+Load balance http/https application & use layer7 specific features such as X-forwarded and Sticky session.
+Also use strict layer 4 load balance for applications that rely on TCP protocol.
+
+
