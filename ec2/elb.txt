@@ -17,5 +17,10 @@ But Expensive
 Classic LB : It works only for legacy purpose.
 Load balance http/https application & use layer7 specific features such as X-forwarded and Sticky session.
 Also use strict layer 4 load balance for applications that rely on TCP protocol.
+If appln stops responding return 504 error.
+This means that appn having issues. This could be at web server layer or database layer.
+Identify where appln is failing and scale-up or down where possible.
+Error504: gateway timeout error.
 
+X-Forwared Header: helps you identify the IP address of a client when you use an HTTP or HTTPS load balancer. Because load balancers intercept traffic between clients and servers, your server access logs contain only the IP address of the load balancer.
 
