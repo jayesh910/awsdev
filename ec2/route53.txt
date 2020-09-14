@@ -1,0 +1,5 @@
+Route 53 is amazon dns service.
+Allows to map domain names to : EC2 instance , load balancers and S3 buckets.
+
+Record Set: A record : Where the domain name is going to go .
+It point to IPv4 address
