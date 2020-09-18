@@ -1,0 +1,66 @@
+S3 : Simple storage service
+For files , images and documents
+Not for installing OS and libraries.
+Object based storage.
+Data is stored accross multiple devices and facilities.
+Files can be - 0B to 5 TB of size.
+Unlimited storage
+Files are stored in buckets.
+Bucket name is universal namespace.
+Name is unique.
+After upload of file , HTTP 200 response code if use API or CLI
+
+
+DATA CONSISTENCY: 
+1. Read after write consistency for PUTS (Immediate data read after write)
+2. Eventual consistency for overwrite PUTS and DELETES(Takes a while to read when data is overwritten)
+
+S3 is object based
+- Key : Name of object
+- Value: Data made of bytes
+- VersionID: Versioning
+- Metadata: Data about data you are storing
+- CORS: Cross origin resource sharing
+- Transfer acceleration
+
+STANDARD S3:
+99.99% availability
+99.999999999(11X9s)% durability
+Keep backup of data
+Lifecycle management
+Enccryption
+ACLs and bucket policies.
+Sustain 2 facilities loss
+
+S3 IA:
+Data is accessed less frequently
+Charged for retieval daata
+provide rapid data access when required.
+
+S3 Onezone IA:
+Same as IA 
+Only available in single AZ .
+99.999999999% ddurability.
+only 99.5% availability
+COst is 20% less than IA
+
+Reduced redundancy storage:
+99.99% durability
+99.99% available
+Used for data that can be recreated if lost
+e.g. thumbnails
+
+Glacier:
+Very cheap
+Used for archival only
+Optimized for data that is infrequently accessed
+Takes 3-5 hours to access.
+ 
+S3-Intelligent Tiering:
+- Unpredictable access pattern
+- 2 tiers: Frequent and infrequent access.
+- automatically moves data to most cost-effective tier.
+99.999999999% durability
+99.9% availablity
+No fees for accessing data
+small monthly fee for monitoring/automation $0.0025per 1000 objects.
