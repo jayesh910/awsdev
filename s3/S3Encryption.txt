@@ -1,0 +1,28 @@
+2 tYPES of encryption
+
+In Transit: There is encryption when you are uploading file from machine to bucket & vice versa.
+  That is done using SSL/TSL . TSL is getting replaced with SSL. i.e. using HTTPS.
+  
+At Rest
+  Server side encryption:
+    -S3 managed keys - SSE-S3  . This is done with 256 bit encryption.
+    -AWS Key management service, Managed keys, SSE-KMS
+    -Server Side encryption with Customer provided keys - SSE-C
+
+Client Side Encryption
+---------------------------------------------------------------------------------
+
+Enforcing Encryption on S3 bucket:
+    -Every time a file is uploaded to S3, a put request is initiated
+    -example: PUT /myFile HTTP1.1 ........ Expect: 100-continue
+    Expect is for confirmation that acknowledge has been received , if not the request is cancelled.
+    
+If file has to be encrypted while uploading: use x-amz-server-side-encryption parameter in the request header.
+
+Two option for x-amz
+1. x-amz-server-side-encryption: AES256(SSE-S3)
+2. x-amz-server-side-encryption: ams:kms(SSE-KMS)
+
+If this is not added to header, it denies the request.
+     -example: PUT /myFile HTTP1.1 ........ Expect: 100-continue x-amz-server-side-encryption: AES256
+
