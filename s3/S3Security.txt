@@ -1,1 +1,8 @@
 
+All newly created buckets are private
+Setup access control to bucket using:
+  - Bucket policies: Applied at bucket level
+  - Access control lists: Applied at object level
+S3 buckets can be made to create access log, which will have log of all who made requests to s3
+These logs can be written to other buckets
+
