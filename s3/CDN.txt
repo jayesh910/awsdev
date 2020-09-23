@@ -1,0 +1,24 @@
+Content delivery network is system of distributed servers(networks) which delivers webpages to user based on geographical region
+Transfer acceleration utilizes cloudfront technology
+
+CDN : Allows more efficient reads & downloads
+Transfer A.: Speeds up upload
+
+Edge locations: Collection of service in geographical n/wks. Copies the content from original bucket , so that user can access data fast near edge.
+After the TTL ends, the data is cleared.
+
+Distribution: Name given to CDN, which consists of collection of edge location
+  -Web distribution: Typically used for websites
+  -RTMP: Used for media streaming
+  
+CLOUDFRONT: 
+- Used to deliver entire website, including dynamic,static,streaming & interactive content
+- Using global network edge locations
+- optimize to work with S3, EC2, ELB or Route53.
+
+Types: 
+  Web distribution - Used for websites , HTTP/HTTPS
+  RTMP - Media streaming
+  
+Use cloudfront to accelerate using S3 transfer acceleration enables fast, easy and secure transfer of files over long distances between your end users & an S3 bucket.
+
