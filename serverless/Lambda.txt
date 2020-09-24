@@ -1,0 +1,37 @@
+Requisite: 
+Data centers
+Hardware
+Assembly code or go, nodejs,python 
+OS : windows , linux 
+Application layer/ AWS API
+AWS Lambda
+
+If you use AWS Lambda, you dont have to worry about above factors to manage.
+========================================
+
+Lambda is a compute service where you upload your code and create a lambda function.
+
+-takes care of provisioning & managing the servers to run the code
+-no worry about OS,patching & scaling
+-Use lambda in foll ways:
+  - event drive compute service
+  - lambda runs your code in response to events
+  - event examples: Change in S3 data or dynamoDb table
+  Called as trigger
+- To run your code  in response to HTTP requests using API gateway
+- or API calls made using AWS SDKs
+
+Working: 
+
+Computer-> HTTPS requests -> API gateway -> Lambda function triggered
+        <-                <-             <-                 
+        
+Languages supporting Lambda functions: Nodejs, Java, Python, C#, Go
+
+Pricing: 
+- First 1 million requests are free , $0.20 per 1 million requests thereafter
+- Duration: Charges depends on how long lambda func. is triggered and response is delivered.
+
+Lambda scales out(not up) automatically
+They are independent: 1 lambda function = 1 event
+
