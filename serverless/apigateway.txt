@@ -1,0 +1,47 @@
+API: Application programming interface
+Types: 
+  1. REST APIs(Representational State Transfer)
+    - Uses JSON
+  2. SOAP APIs(Simple object Access protocol)
+    - Uses XML
+    
+ API Gateways are fully managed service that makes it easy for developers to publish, maintain, monitor and secure APIs at any scale.
+ From console, its easy to create API that will act as front door to connect to business logic, backend services & other AWS services.
+ 
+ WHAT can API GATEWAY DO?:
+  - Expose HTTPS endpoints to define REST APIs
+  - Serverless-ly connecting to Lambda & DynamoDB
+  - Send each API endpoint to different targets
+  - Run efficiently with low cost
+  - Scale effortlessly
+  - Track & control usage of API key
+  - Throttle request to prevent API attacks
+  - Cloudwatch to log all requests
+  - Maintain multiple version of APIs
+  
+To configure API Gateway:
+  - DEfine an API
+  - Resources & nested resources
+  - set security
+  - choose targets(EC2,lambda, DynDB,etc)
+  - Deploy APIs to stages
+  - Now supports AWS SSL certificates
+  
+API Gateways Caching helps by caching recent API calls and making api ready for next calls fast .
+These reduces number of calls and works faster.
+There is a TTL which will delete the api cache as it ends.
+
+SAME ORIGIN POLICY:
+In computing , the same-origin-policy is an important concept in the web application security model.
+If you want to access API from one page of other page, you need to enable this policy
+For this to work , origin needs to be same.
+Done for preventing Cross-site-scripting attacks(XSS)
+
+CORS:
+Mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served
+
+E.g. Browser makes HTTP OPTION call for URL.
+ERROR: Origin policy cannot be read at the remote resource.
+This means you need to enable CORS on API gateway.
+CORS is enforced by the client.
+
