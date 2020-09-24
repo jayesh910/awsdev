@@ -1,0 +1,3 @@
+History: data centres -> IAAS -> PAAS -> Containers -> Serverless
+EC2 launches - 2006
+Alexa - 2016 Works via Lambda
