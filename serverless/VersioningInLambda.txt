@@ -1,0 +1,10 @@
+You can publish 1 or more lambda functions
+Work with different variations of your lambda function viz: development, beta & production
+Each lambda func. version has a unique ARN. 
+After you publish a version, it is immutable
+Latest version is maintained as $LATEST.
+
+Qualified/Unqualified ARNs: The ARN with the version suffix is qualified and other is not.
+
+Alias: Mapping version as name in the tag of ARN version
+You can split up the traffic of lambda function by mentioning the additional version and giving them weightage .
