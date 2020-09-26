@@ -1,0 +1,21 @@
+Import APIs
+
+Use API gateway import API feature to import an API from external definition file into API gateway.
+Currently, import API feature supports Swagger 2.0 definition files.
+
+With the import API , you can either create a new API by submitting a post request
+Update an existing API by using a PUT request.
+Both above should contain swagger definition in the payload & endpoint configuration
+
+Update an existing API by overwriting it with a new deifintion file or merge definition with existing API.
+
+API Throttling:
+
+By default, API gateway limits the steady-state request rate to 10000 requests per second.
+
+If a caller submits 10000 requests in one second , API gateway processes all requests.
+if caller sends 100000 requests in the first ms, API Gateway serves first 5000 requests and process other in other one-second period.
+
+If you go over 10000 request per ms, it will return "429 too many request error".
+
+SOAP Webservice passthrough: You can configure API gateway as SOAP web service passthrough.
