@@ -1,0 +1,14 @@
+Visualize & test your applications
+Graphical console to arrange
+Visualize the component of application as a series of step.
+Makes it simple to build & run multistep application
+Triggers & tracks each step & retries when there are errors
+Logs the state of each step
+Diagnosing is easy step wise
+
+Types: 
+  1. Sequential steps
+  2. Branching steps(Choose to path)
+  3. Parallel steps
+ 
+Comes under application integration section in console.
