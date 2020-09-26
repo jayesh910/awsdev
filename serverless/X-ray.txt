@@ -1,0 +1,27 @@
+service that collects data about requests that your application servers.
+provides tools you can use to view, filter & gain insights on that data
+to detect issues & oppurtunity for optimization
+detects data also about calls your application makes to other aws resources or web apis.
+
+
+Xray architecture: 
+
+  - X-ray sdk => X-ray daemon => X-ray API => X-ray console
+  
+  In Xray console it shows the dashboard where all logs and data information is shown for AWS resources.
+  
+AWS XRay SDKs provides:
+  - interceptors to add to your code to trace incoming HTTP requests.
+  - Client handlers to call other AWS services.
+  - HTTP client to use to instrument calls to other internal & external HTTP web services.
+  
+Xray integrates with ELB, LAMBDA,  API gateway, EC2, Elastic beanstalk
+
+X-Ray supported languages:
+  - Java
+  - Go 
+  - Node.js
+  - Python
+  - Ruby
+  - .Net
+  
