@@ -1,0 +1,6 @@
+Data structure which allows to perform fast queries on specific columns in a table.
+Select the column that you want to include in index
+2 types of indexes:
+  - Local secondary indexes
+  - Global secondary indexes
+  
