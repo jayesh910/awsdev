@@ -1,0 +1,23 @@
+DynamoDB is fast & flexible NoSQL Database service for all applications 
+That need consistent, single digit millisecond latency at any scale
+Fully managed database
+supports both document & key-value data models.
+fit for mobile ,web ,gaming , ad-tech, IoT & many other applications.
+Goes best with Lambda
+
+
+- stored on SSD
+- Spread across 3 geographical distinct data centers
+- Choice of 2 consistency data models:
+  - Eventual consistent reads(default)[Best read performance]
+  - Strongly consistent reads[returns a result that reflects all writes that received a successful response prior to the read]
+  
+Consist of :
+  Tables
+  Items -rows
+  Attribute - column
+  Support key-value & document data structures
+  Document in form of JSON, HTML or XML
+  
+  
+DynamoDB stores & retrieve data according to primary keys.
