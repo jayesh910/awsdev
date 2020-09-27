@@ -1,0 +1,31 @@
+Query: finds items in table based on primary key attribute & value to search for
+e.g select an item where the user ID is equal to 212, will select all the attributes for that item
+
+use an optional sort key if multiple partition are same.
+e.g. if sort key is timestamp, refine the query to only select items with a timestamp of last 7 days.
+
+Use projectionExpression parameter if you want the query to only return specific attributes you want.
+e.g. only return email addresses rather than all attributes.
+
+Results are sorted by sort keys
+Numeric order & by ASCII characters order
+Reverse the order by setting ScanIndexForward parameter to false.
+Queries are by default Eventually consistent 
+Need to explicitly set the query to be Strongly consistent
+
+
+SCAN
+  - Scan operation examines every item in the table.
+  - By default returns all data attributes
+  - Use ProjectionExpression parameter to refine the scan to only return attributes you want.
+  - IN SCAN YOU CAN USE FILTER WHICH WILL PROVIDE ALL TYPE OF OPTIONS e.g. attribute, operation.
+  
+Query works better than Scan.
+Improving Scan performance:
+  - Scan opreation processes data sequentially returning 1MB increments & then moves to next 1MB increments of data .
+  - It can scan upto 1 partition at a time.
+  - To scan multiple partition , you can divide partition into multiple segments,
+  - & then run parallel scans on multiple segments.
+  - This will increase the load on database.
+  - If there are other R/W operations going on, best to not use this.
+  
