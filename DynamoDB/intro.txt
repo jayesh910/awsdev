@@ -21,3 +21,15 @@ Consist of :
   
   
 DynamoDB stores & retrieve data according to primary keys.
+2 types of Primary key
+1. Partition key: Unique attribute like userid  . Value of partition key is input to an internal hash function 
+which determines where is physical location on which data is stored.
+No two items can have same partition key.
+
+2. Composite Key: (Partition key + Sort Key)
+example : partition key = user id & sort key = timestamp of the post
+Two items can have same partition key but they must have differnt sort key.
+All items with same partition key are stored together then sorted according to the sort key value.
+
+IAM conditions: You can restrict the data to limited people only.
+For e.g. if you want to view your data but want to restrict not to see other's data , you can manage that by using IAM policy, where you will only see your data and not other users data by matching primary key value with user id.
