@@ -3,4 +3,20 @@ Select the column that you want to include in index
 2 types of indexes:
   - Local secondary indexes
   - Global secondary indexes
-  
+ 
+Local secondary key:
+ - Can only be created when you are creating the table.
+ - cannot add, remove or modify after table creation
+ - Same partition key as your original table
+ - but a different sort key
+ - Any queries based on this sort key are much faster using the index than the main table.
+ e.g. Partition key: User ID
+      Sort key: Account creation data
+      
+ Global secondary key:
+  - Create when you create your table, or add it later
+  - Different partition key as well as a different sort key
+  - gives a completely different view of the data
+  - speeds up any queries relating to this alternative partition & sort key.
+  - e.g. Partition key: email address 
+         Sort key: last log-in date
