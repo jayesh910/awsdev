@@ -1,0 +1,22 @@
+DAX: In-memory cache for DynamoDB
+
+10X Read performance
+Microsecond performance for millions of requests/sec
+Ideal for read heavy & busty workloads
+e.g. Auction, gaming, retail sites, etc
+
+It is also Write- through caching service , means
+data will be copied to DAX cluster & dynamoDB at the same time
+If item you are quering is in the DAX cluster it will give it, if not
+it will first copy the data from DynamoDB & then provide it to the end.
+This is known as Eventually consistent GetItem operation
+
+Reduces the load on DynamoDB tables
+May Reduce provisioned read capacity
+But will not save the money on DynamoDB
+
+
+Not suitable for:
+  - Strongly consistent reads
+  - App that do not perform many read operation
+  - App that do not require msecs response time
