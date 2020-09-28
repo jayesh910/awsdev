@@ -1,0 +1,16 @@
+Throughput is measured in capacity units
+When creating table, specify your requirements in read capacity unit & write capacity units
+
+1 X write capacity unit = 1 X 1KB write per second
+
+1 X read capacity unit = 1 X Strongly consistent read of 4KB per second OR
+                         2 X Eventually consistent read of 4KB per second
+                         
+So , if table gets 5 X Reads & 5 X writes capacity units.
+it will get 5 X write capacity = 5KB write per second & 
+5 X Read = 20KB read per second for Strongly consistent data or
+           40KB read per second for eventually consistent data
+           
+If you want to read 80 items , each of 3KB 
+So 3KB/4KB = 0.75KB ~ 1KB. So for 80 items , you will need 80 Read capacity per second for eventually consistent read
+So for Strongly consistent read, you get 80/2 = 40 Reads per second.
