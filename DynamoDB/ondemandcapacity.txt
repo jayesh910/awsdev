@@ -1,0 +1,16 @@
+Charges apply for reading, writing & storing data
+Dont need to provide requirement
+Instantly scales up & down based on application
+Great for unpredictable workloads
+Want to pay for only what you use
+
+
+Provisioned capacity      VS on-Demand capacity
+
+Forecast read & write         Unknown workloads
+capacity.
+Predictable application       Unpredictable
+traffice
+Traffic increases             Pay-per use model 
+gradually
+                              Spiky short lived peaks 
