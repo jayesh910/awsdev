@@ -1,1 +1,38 @@
+Elasticache is in-memory cache in the cloud
+Improves performance of web-based application
+Sits between your application & database
+Takes the load off your database
+Good if db is read-heavy & data is not changing frequently
 
+Benefits & uses cases: Social networking, gaming media, Q&A portas
+Frequently accessed data is stored in memory for low-latency access
+Good for compute heavy workloads
+Used to store results of I/O intensive database queries 
+
+2 types of Elasticache:
+1. Memcached:
+  widely adopted memory object caching system
+  Multi-threaded
+  No multi-az capability
+  
+2. Redis:
+  Open-source in-memory key-value store
+  Supports complex data structures: sorted lists & lists
+  Support master/slave replication & multi-az for cross az redundancy
+  
+2 strategies available:
+1. Lazy loading:
+  Loads the data into cache only when necessary.
+  If requested data is not present , it will retun null
+  then appn will fetch data from database & writes the data to cache for next time availability.
+  If node failed, new node is up but with empty cache.
+  TTL : Specifies the number of seconds until the key expires to avoid stale data in cache
+  Does not eliminate stale data - but helpss to avoid it.
+  
+2. Write through: adds or update data to cache , whenever data in db is updated.
+   Data in the cache never stale,
+   every write involves a write to cache & database.
+   If node fails, data is missed in cache until new data is updated in db.
+   Wasted resources if most of the data is never used.
+   
+DAX V/s Elasticache - please read.
