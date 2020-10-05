@@ -1,0 +1,15 @@
+DynamoDB TTL:
+
+- Time to live
+- defines an expired time for data
+- expired items marked for deletion
+- great for removing irrelevant or old data
+  - session data
+  - event log
+  - Temporary data
+- Reduces cost by automatically removing data which is no longer relevant
+
+Create a table with expiration time as column
+Select TTL in dynamoDB & insert the attribute/column name in which time is mentioned 
+In our case we use epoch time 
+Since time is mentioned , at that time the data will get deleted.
