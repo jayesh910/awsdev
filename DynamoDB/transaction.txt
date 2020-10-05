@@ -1,0 +1,5 @@
+TRANSACTIONS:
+
+ACID Transaction: Atomic, Consistent, Isolated, Durable 
+READ or WRITE multiple items across multiple tables as an all or nothing operation
+Check for a pre-requisite condition before writing to a table.
