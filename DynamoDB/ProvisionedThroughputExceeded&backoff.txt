@@ -1,0 +1,14 @@
+ProvisionedThroughputExceededException:
+If request is too high for the R/W capacity provisioned on your DynamoDB table
+SDK will automatically retries the requests until failure
+If not using SDK:
+  - Reduce request frequency
+  - Use Exponential backoff
+
+Many components in a network can  generate errors due to being overload
+
+In addition to simple retries, SDK uses exponential backoff
+Progressively longer waits between consecutive retries: 50ms, 100 ms, 200ms
+If after 1 minute this doesn't work, your request size may be exceeding the throughput for your R/W capacity
+
+Exponential backoff is also used forevery AWS SDK & applies to many services.e.g. S3, cloudformation, SES. 
