@@ -1,0 +1,16 @@
+ENVOLOPE_ENCRYPTION:
+
+Process for encrypting your data. Applies to files>4KB
+
+AWS KMS (CMK) -> GenerateDataKeyAPI -> Data Key(Envelope key) -encrypts-> YOUR DATA 
+
+Encrypted data key is stored on the local 
+
+For decryption:
+  - data key is present on local encrypted. Using kms cmk , using decrypt api,
+  data key will be decrypted into plaintext then using this decrypted data key, 
+  we can decrypt the data.
+  
+In case of KMS CMK, whole data is encrypted with the key and passed on to network.
+Whereas in case of KMS CMK data key, only the data key is encrypted & passed on to network,
+& data is kept locally encrypted. This reduces network traffic & can be used for large data.
