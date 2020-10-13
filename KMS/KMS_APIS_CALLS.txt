@@ -1,0 +1,12 @@
+KMS_APIS_CALLS
+
+Install AWS CLI on EC2
+Create secret.txt
+To encrypt , use key user from AWS managed KMS
+commands:
+
+aws kms encrypt : Encrypts plaintext into ciphertext by using a customer master key
+aws kms decrypt : Decrypts ciphertext that was encrypted by an aws kms CMK.
+aws kms re-encrypt : Decrypts ciphertext & re-encrypts with new master key
+aws kms enable-key-rotation : enables automatic key-rotation every 365 days.
+aws kms generate-data-key : uses the CMK to generate a data key to encrypt data > 4KB.
