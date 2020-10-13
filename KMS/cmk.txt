@@ -1,0 +1,16 @@
+Creating a CMK:
+
+  - Create a user & add that user to group using IAM.
+  - Using that user, use the service of KEY MANAGEMENT SERVICE.
+  - Choose a key type:
+    - Symmetric Key: where you have to use access & secret key to encrypt/decrypt the data.
+    - Asymmetric key: where you get public & private key to encryt/decrypt or sign /verify from operation.
+  - Select Key material : 3 types are KMS, External & cloudhsm . select KMS
+  - Create alias & description
+  - Select the user & key manager to give access to keys
+  - You will get the KMS policy
+  
+You can create multiple keys each for each resources.
+
+    
+  
