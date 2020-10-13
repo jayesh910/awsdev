@@ -1,1 +1,13 @@
+Introduction to KMS:
+  - Managed: Managed service for you to make & use of encryption keys.
+  - Integrated: with many aws services as easy as checking box
+  - Simple: to encrypt data with encryption keys
+  
+Uses: Sensitive data to keep secret, customer data, financial data, database passwords, secrets, credentials.
+
+Integrates with S3, RDS, DynamoDB, Lambda, EBS, EFS, cloudtrail, developer tools.
+
+Customer Master Key: Encrypt/Decrypt data upto 4KB. It is used to generate / encrypt / decrypt data key.
+Data Key: Used to encrypt/decrypt your data.
+This is called as envelope encryption.
 
