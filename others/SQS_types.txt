@@ -1,0 +1,20 @@
+2 types of SQS:
+
+1. Standard Queues: They are the default which provide best-effort ordering
+2. FIFO Queue: Order is strictly preserved
+
+Standard Queues: Unlimited transactions, Guarantee, Best-effort ordering
+FIFO Queues: First-in-first-out delivery, Exactly once processing, 300 Transaction per second (TPS) limit
+
+FIFO is best used in financial, banking transactions.
+
+Change the visibility timeout:
+ default: 30 seconds
+ increase if necessary : tasks takes more than 30 seconds
+ maximum is 12 hours
+ 
+Short polling vs Long polling
+
+short polling will poll for every short period & in return will return the response msgs as empty
+This will increase the money
+Use long polling, scheduled time for polling. Can save money. Only returns when there is msg present .
