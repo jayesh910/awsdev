@@ -1,0 +1,33 @@
+SQS 
+is a distributed messaging queue service
+Enables web service applications to quickly & reliably queue messages
+that one component in application generates for other components.
+
+A queue is a temporary repository for messages awaiting processing 
+
+Suppose for a travel website, a user will search for flights, then this data will be sent in SQS
+Then the application will pull the messages from SQS & work on it . It will get all the information &
+sent back the data to user.
+In case if application or EC2 fleet fails, SQS will hold the message in queue & process it again until 
+it is sucesseded.
+
+Visibility Timeout: No other app can pickup the same message as that message will be marked as invisible.
+This  is the amount of time, the application gets to process the message.
+This maintains in DECOUPLING YOUR INFRASTRUCTURE.
+
+SQS features:
+1. Decouple application components
+2. Store messages: Messages can store upto 256KB of text in any format
+3. Retrieve messages: Can later retrieve messages using SQS APIs
+
+SQS acts as a buffer between the components producing & saving the data.
+
+KEY FACTS: 
+ - SQS is pull based
+ - Messages are 256 KB size
+ - Text data including XML, JSON & unformatted text
+ - Guarantee that msgs will be processed atleast once
+ - Retention period is 1 minute to 14 days
+ - Default retention period is 4 days.
+ 
+ 
