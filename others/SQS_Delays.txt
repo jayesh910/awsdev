@@ -1,0 +1,5 @@
+SQS DELAYS:
+Postpones delivery of new messages to a queue for a few seconds
+Messages sent to delay queues remain invisible to consumers for duration of delay period
+Used for delaying messages to SQS 
+Default delay is 0 seconds, maximum is 900.
