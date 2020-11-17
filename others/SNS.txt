@@ -1,0 +1,22 @@
+SNS
+A web service that makes it easy to set up, operate & send notifications from the cloud.
+PUSH Notifications: To devices(e.g Apple, fireOS, Google, Windows, Android)
+SMS & Email . Also email to SQS queues or any HTTP endpoint
+Trigger Lambda to process the info  in the message, publish to another SNS topic or send the message to another AWS Service
+SNS uses pub-sub model
+Application can publish or push messages to TOPIC
+Subscribers can receive messages from a topic
+
+BANKING APP ==> SNS ==> TOPIC ==> Subscribers ->lambda, SQS queue, Email, mobile device
+Notifications are delivered using a push mechanism that eliminates the need to periodically check or poll for new info & updates
+TOPIC: Its an access point, allowing recipients to subscribe to, & receive identical copies of same notification
+SNS delivers appropriately formatted copies of the message to each subscriber
+
+DURABLE STORAGE: All messages are published to SNS stored reduntantly across multiple AZs
+
+Messages are instantaneous[Push based delivery]
+Simple [Simple API & easy integration with application ]
+Flexible [flexible message delivery over multiple transport protocols]
+Inexpensive [Pay as you go model with no upfront costs]
+Easy to configure
+Managed service
