@@ -11,4 +11,10 @@ e.g. Financial transactions,
      Social media feeds,
      Location tracking data(OLA,Uber)
      IoT sensors.
-
+     Log files
+     
+Kinesis has family of services:
+1. Kinesis Stream : Stream data & video that allow you to build custom application that process data in real time
+Data streams & Video streams
+2. Kinesis Data firehose: Capture, transform, load data streams into AWS data stores to enable near-real-time analytics
+3. Kinesis Data analytics: Analyze, query & transform streamed data in real-time using standard SQL. Store in AWS Data store.
