@@ -1,0 +1,14 @@
+A family of services enables you to collect, process, & analyze streaming data, in real-time
+Allows you to build custom applications for your own business needs.
+Kinesis is a greek word meaning movement or motion
+kinesis deals with data that is in motion or streaming data
+
+Streaming data: Data generated continuously by thousands of data sources, 
+which typically sends in the data records simultaneously & in KBs
+e.g. Financial transactions,
+     Stock prices,
+     Game data,
+     Social media feeds,
+     Location tracking data(OLA,Uber)
+     IoT sensors.
+
