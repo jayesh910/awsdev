@@ -1,0 +1,17 @@
+SES versus SNS
+SES is simple email service
+It is scalable & highly available service
+Send emails on pay-as-you-go model
+Can also be used to receive emails with incoming mails delivered to an S3 bucket
+Trigger lambda & SNS
+SES Use cases:
+Automated emails, online purchases, marketing emails.
+Used for both incoming & outgoing emails
+email add. is required to use SES.
+
+SNS: pub/sub messaging service; formats include SMS, HTTP, SQS, email.
+Can trigger a lambda func.
+Can fanout msgs to a large no. of recipients
+Consumers must subscribe to a topic to receive notifications.
+
+
