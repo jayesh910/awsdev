@@ -1,3 +1,4 @@
+Kinesis:
 A family of services enables you to collect, process, & analyze streaming data, in real-time
 Allows you to build custom applications for your own business needs.
 Kinesis is a greek word meaning movement or motion
@@ -18,3 +19,16 @@ Kinesis has family of services:
 Data streams & Video streams
 2. Kinesis Data firehose: Capture, transform, load data streams into AWS data stores to enable near-real-time analytics
 3. Kinesis Data analytics: Analyze, query & transform streamed data in real-time using standard SQL. Store in AWS Data store.
+
+Kinesis Streams: 
+
+All the devices will produce data -> Kinesis streams retains data for default 24hrs with max. 7 days retention
+Data is stored in Shard.
+Shards are sequence of data records.
+Each shards has unique sequence number.
+Consumers will consume data from kinesis streams.
+Then data can be save to Permanent storage
+
+Kinesis Shards:
+
+
