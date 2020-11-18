@@ -31,4 +31,39 @@ Then data can be save to Permanent storage
 
 Kinesis Shards:
 
+Streams are made of shards
+Each shard is a sequence of one or more data records & provides a fixed unit of capacity.
+5 reads per second.
+Max read rate = 2MB per second.
+1000 write per second.
+Max total write rate is 1MB per second
+
+The data capacity of stream is determined by the no. of shards.
+If the data rate increases, you can increase capacity on your stream by increasing number of shards.
+
+Kinesis video streams:
+=======================
+Securely stream video from connected devices to AWS.
+Videos can be used for analytics & machine learning.
+============================================================
+============================================================
+
+KINESIS DATA FIREHOSE:
+All devices are sending data to kinesis firehose. 
+All the size & data management is managed automatically.
+No need of consumers to consume data, optionally can use lambda function,
+to go the data through Firehose before going to S3.
+No data retention
+To AWS Storage
+
+Used when you have your own BI tool to analyze the data using Redshift, S3 or elasticsearch.
+
+============================================================
+============================================================
+KINESIS DATA ANALYTICS:
+Converts the data from producers to go through kinesis streams or kinesis firehose & ,
+then convert it to SQL for real-time analytics to store in S3, RedShift or Elasticsearch.
+
+
+
 
