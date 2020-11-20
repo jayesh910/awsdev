@@ -65,5 +65,28 @@ Converts the data from producers to go through kinesis streams or kinesis fireho
 then convert it to SQL for real-time analytics to store in S3, RedShift or Elasticsearch.
 
 
+============================================================
+============================================================
+Kinesis Recap:
 
+- The data capacity of your stream is the sum total capacity of its shards.
+- Per Shard:
+     - 5 read transactions per sec, upto max of 2MB per sec.
+     - 1000 write per sec, 1 MB per sec
+- As data rate increases, you increase the number of shards(resharding)
 
+Kinesis client libraries:
+     runs on the consumers instances.
+     tracks the number of shards in your stream
+     discovers new shards when you reshard
+     For every shard there is a record processor.
+     manages no. of record processors relative to no. of shards & consumers.
+     for 1 consumer, KCL creates record processors on single consumer
+     for 2 consumers, it will load balance & create half the processors on 1 instance & half on other
+     & so on.
+     With KCL, generally no. of instances doesn't exceed no. of shards.
+     You never need multiple instances to handle the processing load of one shard.
+     However one worker can process multiple shards.
+     Use CPU utilization to scale up instances & not the number of shards in your stream.
+     Use an autoscaling group to achieve this.
+     
