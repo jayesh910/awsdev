@@ -1,1 +1,24 @@
 Elastic Beanstalk: 
+
+Allows to deploy & scale web applications.
+w/o managing ec2 instances
+widely used application server platforms
+supported languages: JAVA, .NET, PHP, NodeJS, Python,Ruby, Go & Docker.
+Supported platform: Apache, Http server, Tomcat, Nginx, Passenger & IIS.
+Developers: focus in coding & not on deployment
+
+Code -> Elastic beanstalk -> create S3, databases, apache -> monitoring & troubleshooting
+
+Elastic Beanstalk handles: 
+1. Infrastructure ,loadbalancing, autoscaling & app health monitoring
+2. Application platform: auto Updates & patches to OS & app platform
+3. Full control - you have full admin control of aws resources
+
+Options for deployment updates:
+1. All at once: deploys to all hosts concurrently
+2. Rolling: Deploys the new version in batches
+3. Rolling with Additional batch: Launches additional batch of instances & then 
+    deploy the new version in batches.
+4. Immutable: Deploy the new version to fresh group of instances before deleting the old instances.
+5. Traffic splitting: Installs the new version on a new set of instances, like an immutable deployment
+    Forwards a % of incoming client traffic to the new app version
