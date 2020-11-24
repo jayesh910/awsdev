@@ -1,0 +1,14 @@
+AdvancedElasticBeanstalk
+
+For customizing elastic beanstalk for your application.
+Configuration: Define packages to install, create linux users & groups,run shell commands,
+               enable services, load balancer config.
+Config in YAML or JSON format            
+Must have .config format
+Must be inside folder called .ebextensions.
+Must be present in top-level directory
+Source control: The configurtion files can be placed under source control along with rest of your app code.
+
+RDS with EB
+RDS outside EB. You have to configure Security group outside of EB to allow RDS with EB resources.
+
