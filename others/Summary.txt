@@ -1,0 +1,61 @@
+Summary:
+SQS Duistributed msg queueing system.
+SQS allows decoupling the components of an application.
+SQS is pull based, not push based
+Standard & FIFO queue.
+
+SQS Settings: Visibility timeout : default 30s & Max 12hours
+short & Long polling
+
+SQS Delay Queue: Postpone delivery
+                 Delay period(0-900s)
+                 Distributed applications
+                 
+Large SQS Messages(256Kb - 2GB) with help of S3 using SQS extended Client libraries for Java to manage them
+Provides an api for S3 operations
+
+SNS: Multiple formats: SMS sqs Http email
+push notification: Push notifications only
+PUB/sub model. Subscribe to a topic.
+Fanout msgs to large no. of recipients
+
+SES: Emails, not subscription based.
+Automatic mails: promotional mails, etc.
+
+Kinesis
+Streams: Data and Video
+Firehose: Capture, transform and load data continuously into AWS data stores
+Analytics: Real-time analytics using standard SQL on data by streams or firehose
+
+Kineses shard: streams are made of shards
+Each shard is a squence of 1 or mroe data records & provides a fixed unit of capacity
+data capacity of stream is determined by no. of shards.
+data rate increases , you increase no. of shards
+Kinesis client library on consumers to record processor for each shard being consumed.
+No. of consumer instances should not exceed no. of shards.
+
+Elastic beanstalk: 
+Deploy & scale
+programming language
+app server
+provision aws resources
+system admin
+admin control
+
+Advanced elastic beanstalk:
+
+YAML or JSON config files
+.config extension\
+this file should be saved in .ebextensions 
+folder in top level directory
+
+EB Deployment types:
+All at once
+Rolling in batches
+Rolling with additional batches
+Immutable
+Traffic splitting
+
+RDS inside EB
+RDS outside EB
+          
