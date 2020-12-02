@@ -1,0 +1,7 @@
+Codedeploy approaches:
+1. In-place: The application is stopped on each instance & the new release is installed.
+2. Blue/Green: New instances are provisioned & new release is installed on new instances.
+Blue -> active deployment, Green -> new release
+
+In-place: 
+Codedeploy installs the new version, known as revision.
