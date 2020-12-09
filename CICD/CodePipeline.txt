@@ -1,0 +1,8 @@
+CODEPIPELINE
+
+Fully managed CICD Service
+Orchestrates Build, Test & deployment: pipeline is triggered everytime a changes is done in scm
+Automated release process: Fast , consistent , fewer mistakes. Enables quick release of new features & bugs
+Codepipeline integrates with Codecommit, Codebuild, codedeploy, Github, Jenkins, EBeanstalk, Cloudformation, Lambda, ECS.
+
+CodePipeline -> Codecommit -> CodeBuild -> Codedeploy
