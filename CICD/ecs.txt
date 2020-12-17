@@ -1,0 +1,20 @@
+ECS
+
+Containers: More like a virtual operating environment
+Standardized unit with everything the software needs to run libraries, system tools, code & runtime
+Microservices APplications are created using independent stateless component
+Linux containers & windows containers
+ECS supports both linux & windows.
+Container consist of Code libraries & virtual kernel 
+Based on Docker & OS.
+
+Highly scalable,
+Fault tolerant,
+Easy to maintain
+ECS is container orchestration engine
+ECS will run the container in cluster of VMs
+Fargate for serverless - dont need ec2 instances
+EC2 for more control 
+ECS can pick images from ECR
+Services which use ECS: Amazon Sagemaker, Amazon Lex, Amazon.com
+
