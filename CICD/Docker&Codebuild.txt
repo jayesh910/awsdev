@@ -16,3 +16,4 @@ Create a new task definition in ECS
 Add docker image names, cpu & ram size
 Create a service to implement task definition
 To automate all this , we can use AWS services : Codecommit, codebuild & ECS
+
