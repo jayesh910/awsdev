@@ -3,3 +3,16 @@ Docker& CODEBUILD
 AWS provides ECS as a fully managed clustered platform which allows you to run your docker images in the cloud.
 AWS codebuild is fully managed build service which runs sets of commands you define
 
+In ECS you can create cluster
+Using EC2 linux + Networking cluster
+
+Give cluster name
+Provisioning model: On-demand & spot
+Ec2 instance types
+No. of instances
+Select VPC & subnets & SGs
+Select launch type : EC2 or Fargate
+Create a new task definition in ECS
+Add docker image names, cpu & ram size
+Create a service to implement task definition
+To automate all this , we can use AWS services : Codecommit, codebuild & ECS
