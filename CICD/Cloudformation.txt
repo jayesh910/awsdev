@@ -28,3 +28,10 @@ Parameters:
   
 ---
   
+  Parameters: Input custom values
+  Conditions: e.g. Provision resources based on environment
+  Mappings: set values based on the region
+  Transform: include snippets of code outside the main template
+  Resources: AWS resources you are deploying
+  Outputs: Values of resources to be output
+  
