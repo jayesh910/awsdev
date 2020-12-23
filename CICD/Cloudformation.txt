@@ -1,0 +1,30 @@
+CLOUDFORMATION
+
+Allows you to manage, configure & provision your AWS infra as code
+uses cloudormation templates
+interprets the template & makes the appropriate API calls 
+supports YAML or JSON
+Benefits
+  Infra with consistent way, fewer mistakes
+  Less time compared to manually
+  You can version control 
+  Free to use(Only charge for resources)
+  Can be used to manage updates
+  Rollback & delete whole stack as well
+
+Template:Upload template to S3
+Cloudformation reads the template from S3 & makes API call
+Resulting resources are called stack
+
+---
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Template to create EC2 instance"
+Metadata:
+  Instances:
+    Description: "Web server instance"
+    
+Parameters:
+  EnvType:
+  
+---
+  
