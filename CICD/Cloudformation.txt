@@ -35,3 +35,9 @@ Parameters:
   Resources: AWS resources you are deploying
   Outputs: Values of resources to be output
   
+Creating CLOUDFORMATION TEMPLATE: 
+
+Use design cf template or choose a template
+Or upload from S3 url
+Or choose file
+
