@@ -41,3 +41,9 @@ Use design cf template or choose a template
 Or upload from S3 url
 Or choose file
 
+Cloudformation Nested-stacks: 
+Stacks that create other stacks
+Re-use of cloudformation code for common use cases
+Template within a template
+To introduce nested stack, use TemplateURL parameter in CF template
+Mention the URL where Template is saved.
