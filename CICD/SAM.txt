@@ -1,0 +1,10 @@
+Serverless application model
+
+Extension to cloudformation to define serverless applications
+Simplified syntax for defining serverless resources: API's, Lambda func, DynamoDb tables.
+SAM CLI to package your deployment code, upload it to S3, & deploy serverless application.
+SAM CLI Commands:
+  sam package
+  sam deploy
+  
+
