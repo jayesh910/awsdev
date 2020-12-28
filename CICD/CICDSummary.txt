@@ -1,0 +1,46 @@
+CICD SUMMARY:
+
+CI : CodeCommit
+Continuous Delivery: CodeBuild & CodeDeploy
+Continuous Deployment: CodePipeline
+AWS WhitePaper on Practicing continuous integration & continuous deployment on AWS
+
+Codecommit: 
+Centralised code repo
+Enables collab & hndles version control
+
+CodeDeploy:
+In-Place deployment:
+  Capacity is reduced 
+  Lambda is not supported
+  Rolling back involves a re-deploy
+  Great when deploying first time
+  
+Blue/Green deployment:
+  No Capacity reduction
+  Green instances can be created
+  Easy to switch between old & new
+  Pay 4 2 environments until you terminate the old servers.
+  
+  Appspec.yml defines the parameters to be used by codedeploy
+  Hooks: Scripts to run during deployment
+    BeforeInstall,...
+    
+  Run Order
+  In-place deployment: 3 phases - De-registering, installation, re-registering with load balanccer
+  BeforeBlockTraffic -> BlockTraffic -> AfterBlockTraffic
+  
+  ApplicationStop-> DownloadBundle -> BeforeInstall -> Install -> AfterInstall -> ApplicationStart -> ValidateService
+
+CodePipeline
+
+CodeBuild:
+
+  buildspec.yml: Defines the build commands & settings used by codebuild to run build
+  Override settings
+  Codebuild console to identify failures
+  
+Cloudformation: Infrastructure as a code
+  SAM : Define & provision serverless app 
+  SAM Package & SAM Deploy 
+  To resue nested stack use parameter stacks.
