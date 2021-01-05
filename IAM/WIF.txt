@@ -1,0 +1,2 @@
+Lets you give your users access to AWS resources after they have successfully 
+auth. using Web-based identity provider f
