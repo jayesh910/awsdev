@@ -11,3 +11,15 @@ Synchronizes user data for multiple devices
 Recommended for all mobile app & mobile services
 
 Acts as broker to create token to auth with cognito to access AWS resources
+
+Cognito user pools: 
+User directories to manage sign up & sign in in mobile & web applications
+Users can sign-in directly to user-pool or indirectly via web identity provider 
+Cognito acts as a broker between AWS & ID Provider
+Successfull auth generates a no. of JSON Web Token(JWTs)
+
+Identity pool gives you unique identity to access & gives limited-privileges on aws resources
+
+User-> User Pool -> aws cred-> Identity pool -> AWS resources
+Cognito uses Push synchronization to push updates & synchronize user data across multiple services
+AMAZON SNS is used to send silent push notification to all devices associated with a given user identity
