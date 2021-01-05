@@ -1,0 +1,18 @@
+IAM policies:
+
+IAM used to define user access permissions within AWS
+3 types of IAM Policies:
+Managed Policies, Customer Managed Policies, Inline policies
+
+Managed: Created & administered by AWS
+Common use . Eg. AmazonDynamoDBFullAccess, AmazonEC2ReadOnlyAccess, etc.
+Can be assigned to users, groups or roles.
+
+Customer Managed: Created & edited by user.
+Attach to users, roles and groups.
+
+Inline Policy: Embedded within a user, group or role
+Strict 1:1 relationship between entity & policy.
+When you delete the entity , the inline policy is deleted with it
+Not recommended
+Use when policy should not be used by others
