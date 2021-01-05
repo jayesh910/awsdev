@@ -1,2 +1,13 @@
+WEB IDENTITY FEDERATION:
 Lets you give your users access to AWS resources after they have successfully 
-auth. using Web-based identity provider f
+auth. using Web-based identity provider like amazon, facebook, google.
+User receives an auth code from web id ,which can be trade for AWS cred. .
+
+Amazon Cognito:
+Sign-up & sign-in to apps
+Access for guest users
+Acts as identity broker between your application & web id providers
+Synchronizes user data for multiple devices
+Recommended for all mobile app & mobile services
+
+Acts as broker to create token to auth with cognito to access AWS resources
