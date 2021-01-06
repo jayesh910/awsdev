@@ -1,0 +1,14 @@
+CROSS-ACCOUNT ACCESS:
+Delegate access to resources in different AWS account that you own.
+Different account for Dev & production
+Manage resources in other account from one account
+Create a role in one account to allow access & grant permissions to users in different account
+Also can switch roles No password is required
+
+Demo for Prod & Dev Environment:
+Create a IAM policy in prod for s3 access & attach it to IAM role
+Create a IAM policy in Dev.
+In prod, mention the Dev account id to give access in that IAM role
+Now you can switch role between the Prod user & Created new user with Dev access
+
+
