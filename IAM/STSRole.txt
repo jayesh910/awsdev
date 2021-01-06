@@ -1,0 +1,12 @@
+STS ROLE:
+STS Assume Role with Web Identity
+assume-role-with-web-identity is an api provided by STS(Security token service)
+Returns temporary security creds. for users auth. by web or using web id provider like facebook,
+amazon, etc. For mobile app, use cognito.
+regular web app can use the assume-role-with-web-identity API
+Allows users to access AWS resources who have auth. with API
+
+Once the user authenticates with a web identity provider to access AWS resources.
+Application makes the assume-role-with-web-identity API call
+If successful, STS will return temporary creds. enabling access to AWS resources
+AssumedRoleUser ARN & AssumeRoleID - are used to programatically reference the temporary creds., ps they are not IAM role & user
