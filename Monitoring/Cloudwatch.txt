@@ -1,0 +1,13 @@
+Cloudwatch is monitoring service to monitor your AWS resources,& apps that are running on resources.
+Cloudwatch can monitor : Compute, Storage & Content delivery, Databases & Analytics, SNS, . . etc.
+Host level metric check: CPU, Network, Disk, Status check
+Ram utilization is custom metric 
+By default EC2 monitoring is 5 minute interval,when modified - 1 min
+You can retrieve data using GetMetricsStatistics API or by using 3rd party tool
+
+you can store your log data in cloudwatch logs for as long as want
+by default logs are stored indefinitely
+You can retrieve data from any terminated ec2 or elb instance after it's termination
+Minimum granularity at 1 minute for custom metric
+
+Cloudwatch Alarm: 
