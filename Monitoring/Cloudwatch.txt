@@ -17,3 +17,8 @@ Cloudwatch Alarm:
 
 Cloudwatch can be configured to Onpremise application 
 Just need to download the SSM agent & cloudwatch agent
+
+Cloudwatch monitors performance
+Cloudtrails monitors API calls in the AWS platform. Useful for Auditing
+AWS config record the state of your AWS environment & can notify you of changes.Its like CCTV system.
+
