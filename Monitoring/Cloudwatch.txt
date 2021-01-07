@@ -11,3 +11,9 @@ You can retrieve data from any terminated ec2 or elb instance after it's termina
 Minimum granularity at 1 minute for custom metric
 
 Cloudwatch Alarm: 
+
+1 minutes for detailed monitoring
+5 minutes for standard monitoring
+
+Cloudwatch can be configured to Onpremise application 
+Just need to download the SSM agent & cloudwatch agent
